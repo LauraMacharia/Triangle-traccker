@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Triangle-Tracker</title>
-    <link rel="stylesheet" type="text/css" href="..css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../Triangle-tracker/css/styles.css">
 </head>
 <body>
     <h1>Triangle-Tracker</h1>
-    <p>Triangle tracker is an apllication which helps determine whether a triangle is equilateral, isosceles or scalene.</p>
+    <p>Triangle tracker is an apllication which helps<br> determine whether a triangle is equilateral, isosceles or scalene.</p>
     <div class="types">
         <h2>Equilateral triangle.</h2>
         <p>This is a triangle that has all its sides equal.</p>
@@ -17,12 +17,14 @@
         <p>This is a triangle that has only two sides equal.</p>
         <h2>Scalene triangle.</h2>
         <p>It is a triangle that has no sides equal.</p>
+        <h3>Try out.</h3>
         <form>
-            <p><label for="base"></label><input type="number" placeholder="base"></p>
-            <p><label for="height"></label><input type="number" placeholder="height"></p>
-            <p><label for="hypotenuse"></label><input type="number" placeholder="hypotenuse"></p>
+            <p><label for="base"></label><input type="number" placeholder="base" id="base"></p>
+            <p><label for="height"></label><input type="number" placeholder="height" id="height"></p>
+            <p><label for="hypotenuse"></label><input type="number" placeholder="hypotenuse" id="hypotenuse"></p>
             <input type="button" value="Submit" onclick="submit()">
             <input type="button" value="Refresh" onclick="refresh()">
+            <p id="answer"></p>
         </form>
         <script src="script.js"></script>
     </div>
